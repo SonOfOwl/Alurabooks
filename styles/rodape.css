@@ -1,0 +1,127 @@
+.rodape {
+    background: var(--branco);
+    color: var(--azul);
+    padding: 2.5em 2em;
+}
+
+.rodape__titulo {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.rodape__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.rodape__titulo, .rodape__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.rodape__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.rodape__pesquisa::placeholder {
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    color: var(--azul);
+    background: url("../img/Email.svg") no-repeat;
+    background-position: 1px;
+    padding-left: 2em;
+}
+
+.rodape__nome-empresa {
+    background-color: var(--branco);
+    border-top: 1px solid var(--cinza);
+    display: flex;
+    padding: 1.5em;
+    color: var(--preto);
+    font-weight: 400;
+}
+
+.lista-rodapé {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+    .rodape__nome-empresa {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodapé {
+        display: block;
+    }
+    
+
+    .rodape__nome-empresa-alura {
+        font-size: 24px;
+    }
+
+    .lista-rodapé__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista-rodapé__link {
+        color: var(--cinzazao);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+
+    .lista-rodapé__titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+    }
+
+    .rodape__caixa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .contato__descrição {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .rodape__pesquisa {
+        width: 30%;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 1728px) {
+    .rodape__caixa {
+        padding: 1em 20vw;
+    }
+
+    .lista-rodapé {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+
+    .rodape__nome-empresa {
+        padding: 3em 0;
+    }
+
+}
